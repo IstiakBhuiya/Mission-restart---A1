@@ -1,9 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mission Restart a1</title>
+
+    <!--Tailwind & Daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- FA cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- -------Navbar---------- -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Home</a></li>
+            <li>
+              <a>Products</a>
+            </li>
+            <li><a>About</a></li>
+            <li><a>Contract</a></li>
+          </ul>
+        </div>
+        <a class="text-blue-700 font-bold btn btn-ghost text-xl">SwiftCart</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a>About</a></li>
+          <li><a>Contract</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn"><i class="fa-solid fa-cart-arrow-down"></i></a>
+      </div>
+    </div>
+
+    <!-- Hero  -->
+    <div
+      class="hero min-h-screen"
+      style="background-image: url(./banner-image.png)"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content">
+        <div class="text-center">
+          <h1 class="mb-5 text-5xl font-bold">Best Collection For You</h1>
+          <p class="mb-5">
+            Discover the latest trends in fashion, electronics, and more.
+            Shopwith confidence and style at Swiftcart.
+          </p>
+          <div class="">
+            <button class="btn btn-primary">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Description -->
+    <div class="text-center p-6">
+      <h1 class="mb-5 text-5xl font-bold">Why Choose US</h1>
+      <p class="mb-5 text-gray-400">
+        We provide the best shopping experience with top-notch services.
+      </p>
+      <!-- cart des -->
+      <div class="flex p-5 gap-5">
+        <div class="card card-border bg-base-100 w-96 text-left bg-slate-100">
+          <div class="card-body">
+            <div><i class="fa-regular fa-truck text-3xl"></i></div>
+            <h2 class="card-title">Fast Delivery</h2>
+            <p class="p-0">Get your products delivered quickly and safety.</p>
+          </div>
+        </div>
+        <div class="card card-border bg-base-100 w-96 text-left bg-slate-100">
+          <div class="card-body">
+            <div><i class="fa-solid fa-lock text-3xl"></i></div>
+            <h2 class="card-title">Secure Payment</h2>
+            <p class="p-0">
+              Your transactions are protected with secure methods.
+            </p>
+          </div>
+        </div>
+        <div class="card card-border bg-base-100 w-96 text-left bg-slate-100">
+          <div class="card-body">
+            <div><i class="fa-regular fa-cloud text-3xl"></i></div>
+            <h2 class="card-title">24/7 Suport</h2>
+            <p class="p-0">We're here to help you anyime you need us.</p>
+          </div>
+        </div>
+        <div class="card card-border bg-base-100 w-96 text-left bg-slate-100">
+          <div class="card-body">
+            <div><i class="fa-solid fa-check text-3xl"></i></div>
+            <h2 class="card-title">Quality Products</h2>
+            <p class="p-0">Real products loaded from a real API source.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
